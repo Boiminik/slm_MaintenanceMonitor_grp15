@@ -21,7 +21,7 @@ public class MessageController {
     }
     @RequestMapping("/api/message/reset")
     public String resetMessage(){
-        currentMessage = ogMessage;
+        currentMessage = ogMessage; //resets any set custom message to the default message; does nothing if already default
         return "ok";
     }
 
