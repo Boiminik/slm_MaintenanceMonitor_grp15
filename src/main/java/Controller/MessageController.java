@@ -19,6 +19,11 @@ public class MessageController {
         currentMessage = customMessage; //changes currentMessage to the desired message
         return "ok";
     }
+    @RequestMapping("/api/message/reset")
+    public String resetMessage(){
+        currentMessage = ogMessage;
+        return "ok";
+    }
 
 
 }
