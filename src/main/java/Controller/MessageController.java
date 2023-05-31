@@ -7,7 +7,7 @@ public class MessageController {
 
 
     String ogMessage = "Everything operates as expected"; // Default message
-    String currentMessage = ogMessage;
+    String currentMessage = ogMessage; //current chosen message
 
     @RequestMapping("/api/message")
     public String showMessage(){
@@ -16,7 +16,7 @@ public class MessageController {
 
     @RequestMapping("/api/message/set")
     public String setMessage(@RequestParam String customMessage){
-        currentMessage = customMessage;
+        currentMessage = customMessage; //changes currentMessage to the desired message
         return "ok";
     }
 

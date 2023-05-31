@@ -12,4 +12,11 @@ class MessageControllerTest {
         String testmessage = "This is a test message";
         assertEquals("This is a test message", testmessage);
     }
+    @Test
+    void setMessage(){ //test2 shows that the message was correctly changed into the desired text
+        MessageController mCont = new MessageController();
+        String test = "Hope this works";
+        mCont.setMessage(test);
+        assertEquals(test, mCont.currentMessage);
+    }
 }
