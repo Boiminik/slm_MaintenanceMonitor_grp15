@@ -11,7 +11,7 @@ public class MessageController {
 
     @RequestMapping("/api/message")
     public String showMessage(){
-        return ogMessage; //returns the current message of the string ogMessage
+        return currentMessage; //returns the current message of the string currentMessage
     }
 
     @RequestMapping("/api/message/set")
